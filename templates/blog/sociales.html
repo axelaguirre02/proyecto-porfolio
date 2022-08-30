@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}REDES SOCIALES{% endblock title %}
+
+{% block content %}
+    <article class="row bg-gray">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corrupti labore quae laboriosam. Repudiandae laudantium possimus voluptate commodi, tempore a ex nam incidunt quas doloremque debitis voluptatem eaque ipsum reiciendis delectus doloribus. In quod, explicabo veritatis quae iste quia possimus, eius aliquam reiciendis voluptas labore maiores accusamus voluptatem, nostrum corrupti debitis deserunt consequuntur incidunt. Quod provident placeat in nesciunt quae ratione numquam dolores nihil eius accusamus consectetur eligendi cumque reprehenderit nulla dicta voluptates facilis, nemo nam sed. Quia ex vero dolorum nulla eaque at, officia iusto quas necessitatibus architecto recusandae atque quaerat. Quae rem odit totam quis ducimus deserunt et!</p>
+
+        <div class="grid text-center" style="--bs-rows: 6; --bs-columns: 6;">
+            <div class="g-start-6" style="grid-row: 6">
+                <a href="#"><img src="{% static 'img/linkedin.png' %}" class="icono" alt="linkedin"></a>
+                <a href="#"><img src="{% static 'img/facebook.png' %}" class="icono" alt="facebook"></a>
+                <a href="#"><img src="{% static 'img/github.png' %}" class="icono" alt="github"></a>
+                <a href="#"><img src="{% static 'img/instagram.png' %}" class="icono" alt="instagram"></a>
+                <a href="#"><img src="{% static 'img/twitter.png' %}" class="icono"  alt="twitter"></a>
+                <img src="{% static 'img/youtube.png' %}" class="icono" alt="youtube">
+            </div>
+        </div>
+    </article>
+{% endblock content %}

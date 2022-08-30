@@ -1,0 +1,25 @@
+
+.bg-gray {
+    background: #212529;
+}
+
+.bg-black {
+    background: #000000e8;
+}
+
+#avatar {
+    width: 450px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.icono {
+    width: 80px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.card-project:hover {
+    border: 1px solid white;
+    cursor: pointer;
+}

@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1 class="md-2">PUBLICACIONES</h1>
+
+{% for publicacion in publicaciones %}
+
+    <div class="py-3">
+
+        <div class="card card-body bg-gray card-project">
+            <div class="row">
+
+                <div class="col-3">
+                    <img class="img-fluid pt-1" src="{{publicacion.image.url}}" alt="{{publicacion.title}}">
+                </div>
+
+                <div class="col-9">
+                    <h3>{{publicacion.title|upper}}</h3>
+                    <h6>Fecha de publicacion: {{publicacion.date|date:'d/m/Y'}}</h6>
+                </div>
+
+                <div class="grid text-center" style="--bs-rows: 1; --bs-columns: 1;">
+                    <div class="g-start-1" style="grid-row: 1">
+                        <a href="/publicacion/{{publicacion.id}}" class="btn btn-secondary">Ir a la publicacion</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endfor %}
+
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="row my-4 text-center">
+
+        <div class="col-md-4 p-6">
+            <article class="card bg-gray">
+                <section class="card-body ">
+
+                    <img src="{{project.image.url}}" alt="{{project.title}}" class="card-img-top" >
+
+                    <h2> {{project.title|upper}}</h2>
+                    <h6>{{project.description}}</h6>
+            
+                    <a href="{% url 'proyectos' %}" class="btn btn-secondary">Volver a los proyectos</a>
+                    
+                </section>
+            </article>
+        </div>
+    </div>
+
+{% endblock content %}
